@@ -1,0 +1,102 @@
+﻿@model Programas.Models.EtapasCambios
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>EtapasCambios</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Descripcion)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Descripcion)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Etapa)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Etapa)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Resultado)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Resultado)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Lugar)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Lugar)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ProxEtapa)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ProxEtapa)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ProxResultado)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ProxResultado)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.GenHistoria)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.GenHistoria)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TipoMovimientoBenef)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TipoMovimientoBenef)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ValidacionGrupo)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ValidacionGrupo)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.AplicaReserva)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.AplicaReserva)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PublicarRrhh)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PublicarRrhh)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.AccionOferta)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.AccionOferta)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.GeneraProyecto)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.GeneraProyecto)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TareaAprueba)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TareaAprueba)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.CambioEstado">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

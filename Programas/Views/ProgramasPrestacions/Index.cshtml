@@ -1,0 +1,263 @@
+﻿@model IEnumerable<Programas.Models.ProgramasPrestacion>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+@*<p>
+    <a asp-action="Create">Create New</a>
+</p>*@
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Programa)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TipoPrograma)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Sexo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EstadoPrograma)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Anio)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Descripcion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DuracionMax)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DuracionMin)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EdadMax)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EdadMin)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FechaInicio)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FechaFin)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PrioridadEntreProgramas)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AutoGenerarProyectos)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AutoAsignarBeneficiarios)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AutoIncrementarCupo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IndicaContraparte)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PrioridadDePago)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AnsesPrograma)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ValidacionRegla)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TipoOrganismo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AsociacionTipo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AsociacionObligatoria)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CupoMinimo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CupoMaximo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TipoContratoLaboral)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TipoModificacionAsignacion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TipoPago)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PadronTerminalidad)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.GrupoOrganismo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TipoAcuerdoUnico)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ProtocoloUsaGecal)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CalculoPeriodoInicio)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FormaLiquidacion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CorrespondeCierre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TipoLocalizacion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CalificacionTipo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LineaDeAccion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TipoAplicacionReserva)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Programa)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TipoPrograma)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Sexo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EstadoPrograma)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Anio)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Descripcion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DuracionMax)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DuracionMin)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EdadMax)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EdadMin)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FechaInicio)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FechaFin)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PrioridadEntreProgramas)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AutoGenerarProyectos)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AutoAsignarBeneficiarios)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AutoIncrementarCupo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IndicaContraparte)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PrioridadDePago)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AnsesPrograma)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ValidacionRegla)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TipoOrganismo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AsociacionTipo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AsociacionObligatoria)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CupoMinimo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CupoMaximo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TipoContratoLaboral)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TipoModificacionAsignacion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TipoPago)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PadronTerminalidad)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GrupoOrganismo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TipoAcuerdoUnico)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProtocoloUsaGecal)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CalculoPeriodoInicio)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FormaLiquidacion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CorrespondeCierre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TipoLocalizacion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CalificacionTipo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LineaDeAccion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TipoAplicacionReserva)
+            </td>
+            @*<td>
+                <a asp-action="Edit" asp-route-id="@item.Programa">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Programa">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Programa">Delete</a>
+            </td>*@
+        </tr>
+}
+    </tbody>
+</table>

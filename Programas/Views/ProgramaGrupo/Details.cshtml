@@ -1,0 +1,42 @@
+﻿@model Programas.Models.ProgramaGrupo
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ProgramaGrupo</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Descripcion)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Descripcion)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.FormularioTipo)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FormularioTipo)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DatoEmpleadorId)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DatoEmpleadorId)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CircuitoNavigation)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CircuitoNavigation.Descripcion)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.GrupoPrograma">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

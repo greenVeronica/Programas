@@ -1,0 +1,249 @@
+﻿@model Programas.Models.ProgramasPrestacion
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>ProgramasPrestacion</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TipoPrograma)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TipoPrograma)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Sexo)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Sexo)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.EstadoPrograma)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.EstadoPrograma)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Anio)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Anio)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Descripcion)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Descripcion)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DuracionMax)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DuracionMax)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DuracionMin)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DuracionMin)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.EdadMax)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.EdadMax)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.EdadMin)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.EdadMin)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaInicio)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FechaInicio)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaFin)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FechaFin)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PrioridadEntreProgramas)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PrioridadEntreProgramas)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.AutoGenerarProyectos)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.AutoGenerarProyectos)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.AutoAsignarBeneficiarios)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.AutoAsignarBeneficiarios)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.AutoIncrementarCupo)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.AutoIncrementarCupo)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.IndicaContraparte)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.IndicaContraparte)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PrioridadDePago)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PrioridadDePago)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.AnsesPrograma)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.AnsesPrograma)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ValidacionRegla)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ValidacionRegla)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TipoOrganismo)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TipoOrganismo)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.AsociacionTipo)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.AsociacionTipo)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.AsociacionObligatoria)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.AsociacionObligatoria)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CupoMinimo)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CupoMinimo)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CupoMaximo)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CupoMaximo)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TipoContratoLaboral)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TipoContratoLaboral)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TipoModificacionAsignacion)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TipoModificacionAsignacion)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TipoPago)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TipoPago)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PadronTerminalidad)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PadronTerminalidad)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.GrupoOrganismo)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.GrupoOrganismo)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TipoAcuerdoUnico)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TipoAcuerdoUnico)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ProtocoloUsaGecal)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ProtocoloUsaGecal)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CalculoPeriodoInicio)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CalculoPeriodoInicio)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.FormaLiquidacion)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FormaLiquidacion)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CorrespondeCierre)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CorrespondeCierre)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TipoLocalizacion)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TipoLocalizacion)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CalificacionTipo)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CalificacionTipo)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.LineaDeAccion)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.LineaDeAccion)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TipoAplicacionReserva)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TipoAplicacionReserva)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Programa" />
+        <input type="submit" value="Delete" class="btn btn-default" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>

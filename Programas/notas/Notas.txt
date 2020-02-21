@@ -1,0 +1,3 @@
+﻿para generar modelo a partir de la base
+
+PM> Scaffold-DbContext "Server=S1-dIXX-SQL07;Initial Catalog=empleoproyectos;Integrated Security=SSPI"Microsoft.EntityFrameworkCore.SqlServer -Tables Actores,EtapaActor,Etapas,EtapasCambios,PROGRAMAS,ProgramaGrupos,ProgramaGrupo,Resultados,ProgramaCircuito -OutputDir Models

@@ -1,0 +1,45 @@
+﻿@model Programas.Models.EtapaActor
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h2>Create</h2>
+
+<h4>EtapaActor</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Actor" class="control-label"></label>
+                <select asp-for="Actor" class ="form-control" asp-items="ViewBag.Actor"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="CambioEstado" class="control-label"></label>
+                <select asp-for="CambioEstado" class ="form-control" asp-items="ViewBag.CambioEstado"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="GrupoPrograma" class="control-label"></label>
+                <select asp-for="GrupoPrograma" class ="form-control" asp-items="ViewBag.GrupoPrograma"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Nota" class="control-label"></label>
+                <input asp-for="Nota" class="form-control" />
+                <span asp-validation-for="Nota" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

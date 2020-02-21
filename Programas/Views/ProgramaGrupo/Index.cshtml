@@ -1,0 +1,59 @@
+﻿@model IEnumerable<Programas.Models.ProgramaGrupo>
+
+@{
+    ViewData["Title"] = "Listado de Grupos De programas";
+}
+
+<h2>Index</h2>
+
+@*<p>
+    <a asp-action="Create">Create New</a>
+</p>*@
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.GrupoPrograma)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Descripcion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FormularioTipo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DatoEmpleadorId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CircuitoNavigation)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.GrupoPrograma)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Descripcion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FormularioTipo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DatoEmpleadorId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CircuitoNavigation.Descripcion)
+            </td>
+            @*<td>
+                <a asp-action="Edit" asp-route-id="@item.GrupoPrograma">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.GrupoPrograma">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.GrupoPrograma">Delete</a>
+            </td>*@
+        </tr>
+}
+    </tbody>
+</table>

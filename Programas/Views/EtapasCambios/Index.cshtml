@@ -1,0 +1,119 @@
+﻿@model IEnumerable<Programas.Models.EtapasCambios>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.CambioEstado)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Descripcion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Etapa)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Resultado)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Lugar)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ProxEtapa)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ProxResultado)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.GenHistoria)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TipoMovimientoBenef)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ValidacionGrupo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AplicaReserva)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PublicarRrhh)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AccionOferta)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.GeneraProyecto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TareaAprueba)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.CambioEstado)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Descripcion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Etapa)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Resultado)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Lugar)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProxEtapa)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProxResultado)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GenHistoria)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TipoMovimientoBenef)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ValidacionGrupo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AplicaReserva)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PublicarRrhh)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AccionOferta)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GeneraProyecto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TareaAprueba)
+            </td>
+            @*<td>
+                <a asp-action="Edit" asp-route-id="@item.CambioEstado">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.CambioEstado">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.CambioEstado">Delete</a>
+            </td>*@
+        </tr>
+}
+    </tbody>
+</table>

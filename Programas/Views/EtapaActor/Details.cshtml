@@ -1,0 +1,42 @@
+﻿@model Programas.Models.EtapaActor
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>EtapaActor</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nota)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Nota)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ActorNavigation)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ActorNavigation.Actor)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CambioEstadoNavigation)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CambioEstadoNavigation.CambioEstado)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.GrupoProgramaNavigation)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.GrupoProgramaNavigation.GrupoPrograma)
+        </dd>
+    </dl>
+</div>
+<div>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    <a asp-action="Index">Back to List</a>
+</div>
