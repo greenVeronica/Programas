@@ -1,22 +1,49 @@
 ﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification\ 
 for details on configuring this project to bundle and minify static web assets. */
 .Programa {
-    padding-top: 50px;
+    padding-top: 15px;
     padding-bottom: 20px;
     padding-left: 0px;
-    padding-right: 0px;
-   margin-left:100px;
+    padding-right: 10px;
+    margin-left: 10px;
+    margin-top: 15px;
+    font-size: 10px;
+    
 }
-.container{
+#ProgramaInput{
+    font-size:25px;
 
+}
+.navbar-collapse collapse {
     /*background-color:aliceblue;*/
+    padding: 0px;
+    margin: 0px;
+}
+.container {
+    /*background-color:aliceblue;*/
+    padding: 0px;
+    margin: 0px;
 }
 body {
     padding: 0px;
     margin: 0px;
 
 }
+.nav {
+    font-size: 15px;
+    padding: 0px;
+    margin: 0px;
+}
 
+nav.navbar.navbar-expand.navbar-light {
+    padding: 0px;
+    margin: 0px;
+}
+.ul.nav.navbar-nav {
+    /*marginright-auto margintop-2 margintop-lg-0*/
+    /*margin-right: auto;*/
+    margin-top: 2px;
+}
 .btn{
     background-color:black;
         
