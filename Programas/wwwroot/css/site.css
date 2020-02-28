@@ -3,70 +3,25 @@ for details on configuring this project to bundle and minify static web assets. 
 .Programa {
     padding-top: 15px;
     padding-bottom: 20px;
-    padding-left: 0px;
+    padding-left: 10px;
     padding-right: 10px;
     margin-left: 10px;
     margin-top: 15px;
     font-size: 10px;
     
 }
+.nav {
+  background-color:red;
+}
 #ProgramaInput{
     font-size:25px;
 
 }
-.navbar-collapse collapse {
-    /*background-color:aliceblue;*/
-    padding: 0px;
-    margin: 0px;
-}
-.container {
-    /*background-color:aliceblue;*/
-    padding: 0px;
-    margin: 0px;
-}
-body {
-    padding: 0px;
-    margin: 0px;
 
-}
-.nav {
-    font-size: 15px;
-    padding: 0px;
-    margin: 0px;
-}
 
-nav.navbar.navbar-expand.navbar-light {
-    padding: 0px;
-    margin: 0px;
-}
-.ul.nav.navbar-nav {
-    /*marginright-auto margintop-2 margintop-lg-0*/
-    /*margin-right: auto;*/
-    margin-top: 2px;
-}
-.btn{
-    background-color:black;
-        
-}
-/* Wrapping element */
-/* Set some basic padding to keep content from hitting the edges */
-.body-content {
-    width: 100%;
-    padding: 0px;
-    margin: 0px;
-    /*background-color: aliceblue;*/
-}
+     
 
-/* Carousel */
-.carousel-caption p {
-    font-size: 20px;
-    line-height: 1.4;
-}
 
-/* Make .svg files in the carousel display properly in older browsers */
-.carousel-inner .item img[src$=".svg"] {
-    width: 100%;
-}
 
 /* QR code generator */
 #qrCode {
